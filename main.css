@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 'Montserrat',  sans-serif;
+}
+body{
+    background: rgba(223, 223, 227, 0.8);
+}
+.wrap{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registration{
+    background-color: rgba(100, 208, 227, 0.731);
+    padding: 25px;
+    border-radius:5px ;
+    width: 500px;
+}
+.registration .title{
+    
+text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #be1559;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.label{
+    margin-top: 35px;
+}
+.fname{
+    margin-bottom: 15px;
+}
+ .label .fname:last-child{
+    margin-bottom: 0;
+}
+.fname label{
+    display: block;
+    margin-top: 3px;
+    color: rgb(169, 51, 65);
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+}
+.input input[type="text"]{
+    width: 165px;
+}
+.label input[type="text"] {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #18181a;
+    padding: 8px;
+    outline: none;
+}
+.fname input[type=text]:focus{
+    border-color: #9c103c;
+
+}
+.fname ul{
+    padding: 8px 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    background:#ffffff;
+}
+.fname ul li:first-child{
+    margin-right: 15px;
+}
+.fname ul .radio{
+    margin-bottom: 0;
+    position: relative;
+
+
+}
+.fname ul .radio .input_radio{
+    top: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0;
+
+}
+.fname ul .radio span{
+    padding:3px 20px;
+    border-radius: 3px;
+    font-size: 15px;
+    display: inline-block;
+    color:  #c41818;
+    
+    
+}
+.fname .input_radio:checked~span {
+    background: #9686b8;
+}
+.fname .submit {
+    width: 100%;
+    background: #e47b2a;
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.fname .submit:hover {
+    background: #dd987a;
+}
